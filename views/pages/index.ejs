@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Angry Birds</title>
+		<style>
+		body {
+			background-image: url('https://c1.staticflickr.com/8/7065/6812184802_ecc30236f2_b.jpg');
+			background-size: cover;
+			margin: 0;
+			overflow: hidden;
+		}
+		#win-message {
+			display: none;
+			position: absolute;
+			height: 400px;
+			width: 400px;
+			top: 50%;
+			left: 50%;
+			margin-top: -200px;
+			margin-left: -200px;
+			font-size: 36px;
+			text-align: center;
+			line-height: 400px;
+			font-family: Calibri;
+			cursor: pointer;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="win-message" onclick="location.reload()">
+			You win!
+		</div>
+
+		<script src="javascripts/lib/three.js"></script>
+		<script src="javascripts/lib/physi.js"></script>
+		<script src="javascripts/environment.js"></script>
+		<script src="javascripts/scaffold.js"></script>
+		<script src="javascripts/graphics.js"></script>
+	</body>
+</html>
